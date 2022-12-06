@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,900;1,500;1,600;1,800&display=swap'); 
+
+
+:root{
+    --main-color: #09031dfa;
+    --light-bg: #f3efec;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+    outline: none;
+    border: none;
+}
+
+html{
+    font-size: 80%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+html::-webkit-scrollbar-track{
+    background-color: blue;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: #00ff62af;
+}
+
+section{
+    padding: 4rem 5%;
+}
+.header{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0; left: 0; right: 0;
+    background: var(--main-color);
+    z-index: 1000;
+}
+.header .logo{
+    font-size: 2rem;
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.header .navbar a{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-decoration: none;
+}
+.header .navbar .close_bar i{
+    position: absolute;
+    color: var(--light-bg);
+    font-size: 1.5rem;
+    top: 1.8rem;
+    right: 2rem;
+    cursor: pointer;
+    display: none;
+}
+.header .navbar .bars i{
+    font-size: 2rem;
+    color: var(--light-bg);
+    cursor: pointer;
+    display: none;
+}
